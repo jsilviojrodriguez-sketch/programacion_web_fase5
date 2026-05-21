@@ -1,42 +1,102 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
+    margin: 0;
+    transition: 0.3s;
 }
 
-/* MENÚ */
-#menu {
-    display: none;
-    flex-direction: column;
-    background: #222;
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #111;
     padding: 10px;
+    position: relative;
 }
 
-#menu a {
+/* ===== HAMBURGUESA ===== */
+.hamburguesa {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburguesa span {
+    width: 30px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+}
+
+/* ANIMACIÓN X */
+.hamburguesa.activo span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburguesa.activo span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburguesa.activo span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===== MENÚ ===== */
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    border-radius: 8px;
+
+    transform: translateX(-120%);
+    transition: 0.3s ease;
+}
+
+.menu a {
     color: white;
     text-decoration: none;
-    padding: 8px;
+    padding: 12px;
 }
 
-#menu a:hover {
+.menu a:hover {
     background: #444;
 }
 
-/* CUANDO ESTÁ ACTIVO */
-#menu.activo {
-    display: flex;
+/* MENÚ ACTIVO (SLIDE IN) */
+.menu.activo {
+    transform: translateX(0);
 }
 
-/* BOTÓN */
-#botonMenu {
-    padding: 10px;
-    background: black;
-    color: white;
+/* ===== BOTÓN MODO OSCURO ===== */
+.modo {
+    background: none;
     border: none;
+    font-size: 20px;
     cursor: pointer;
+    color: white;
 }
 
-/* SLIDER */
-#slider {
-    margin-top: 20px;
-    width: 100%;
-    max-width: 600px;
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .menu {
+        width: 100%;
+        left: 0;
+    }
+}
+
+/* ===== MODO OSCURO ===== */
+body.dark {
+    background: #111;
+    color: white;
+}
+
+body.dark .header {
+    background: #000;
 }

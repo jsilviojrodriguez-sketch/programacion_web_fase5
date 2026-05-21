@@ -5,24 +5,39 @@
     <title>Boxeo Mexicano</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <button id="botonMenu">☰ Menú</button>
+<header class="header">
 
-    <nav id="menu">
+    <!-- BOTÓN HAMBURGUESA -->
+    <button id="botonMenu" class="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- BOTÓN MODO OSCURO -->
+    <button id="modoOscuro" class="modo">🌙</button>
+
+    <!-- MENÚ -->
+    <nav id="menu" class="menu">
         <a href="#">Inicio</a>
         <a href="#">Historia</a>
         <a href="#">Campeones</a>
         <a href="#">Contacto</a>
     </nav>
+
 </header>
 
+<!-- MENSAJE DINÁMICO -->
 <h2 id="mensaje"></h2>
 
 <!-- SLIDER -->
 <img id="slider" src="images/Boxeo.jpg" alt="slider" width="500">
 
+<!-- JS -->
 <script src="script.js"></script>
+
 </body>
 </html>
