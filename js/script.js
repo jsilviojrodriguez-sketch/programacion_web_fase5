@@ -25,17 +25,17 @@ if (mensaje) {
 
     if (hora < 12) {
 
-        mensaje.innerHTML = "Buenos días, bienvenido al Boxeo Mexicano";
+        mensaje.innerHTML = "Bienvenido al Boxeo Mexicano";
 
     }
     else if (hora < 18) {
 
-        mensaje.innerHTML = "Buenas tardes, disfruta la historia del Boxeo Mexicano";
+        mensaje.innerHTML = "Puedes disfruta la historia del Boxeo Mexicano";
 
     }
     else {
 
-        mensaje.innerHTML = "Buenas noches, conoce la cultura del Boxeo Mexicano";
+        mensaje.innerHTML = "Conoce la cultura del Boxeo Mexicano";
 
     }
 
