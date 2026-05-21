@@ -2,33 +2,34 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boxeo Mexicano</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body>
 
-<header>
+    <!-- HEADER -->
+    <header>
+        <button id="botonMenu">☰ Menú</button>
 
-    <button id="botonMenu">☰ Menú</button>
+        <nav id="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Historia</a>
+            <a href="#">Campeones</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
 
-    <nav id="menu">
-        <a href="#">Inicio</a>
-        <a href="#">Historia</a>
-        <a href="#">Campeones</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <!-- MENSAJE DINÁMICO -->
+    <h2 id="mensaje"></h2>
 
-</header>
+    <!-- SLIDER -->
+    <img id="slider" src="images/Boxeo.jpg" alt="Boxeo Mexicano">
 
-<!-- MENSAJE -->
-<h2 id="mensaje"></h2>
-
-<!-- SLIDER -->
-<img id="slider" src="images/Boxeo.jpg" width="500">
-
-<script src="script.js"></script>
+    <!-- JS -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>

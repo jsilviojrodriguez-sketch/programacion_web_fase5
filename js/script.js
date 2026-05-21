@@ -1,7 +1,7 @@
 const boton = document.getElementById("botonMenu");
 const menu = document.getElementById("menu");
 
-// MENÚ SIMPLE
+// MENÚ
 boton.addEventListener("click", function () {
     if (menu.style.display === "flex") {
         menu.style.display = "none";
