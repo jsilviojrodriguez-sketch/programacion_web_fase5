@@ -1,50 +1,36 @@
 body {
     font-family: Arial;
     margin: 0;
-    transition: 0.3s;
+    background: #f2f2f2;
+    color: #111;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #111;
     padding: 10px;
-    position: relative;
 }
 
-/* ===== HAMBURGUESA ===== */
+/* BOTÓN HAMBURGUESA */
 .hamburguesa {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    cursor: pointer;
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .hamburguesa span {
     width: 30px;
     height: 3px;
     background: white;
-    transition: 0.3s;
 }
 
-/* ANIMACIÓN X */
-.hamburguesa.activo span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburguesa.activo span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburguesa.activo span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-}
-
-/* ===== MENÚ ===== */
+/* MENÚ */
 .menu {
     position: absolute;
     top: 60px;
@@ -53,50 +39,32 @@ body {
     display: flex;
     flex-direction: column;
     width: 180px;
-    border-radius: 8px;
 
     transform: translateX(-120%);
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .menu a {
     color: white;
     text-decoration: none;
-    padding: 12px;
+    padding: 10px;
 }
 
 .menu a:hover {
     background: #444;
 }
 
-/* MENÚ ACTIVO (SLIDE IN) */
+/* MENÚ ACTIVO */
 .menu.activo {
     transform: translateX(0);
 }
 
-/* ===== BOTÓN MODO OSCURO ===== */
-.modo {
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    color: white;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 600px) {
-    .menu {
-        width: 100%;
-        left: 0;
-    }
-}
-
-/* ===== MODO OSCURO ===== */
+/* MODO OSCURO */
 body.dark {
     background: #111;
     color: white;
 }
 
 body.dark .header {
-    background: #000;
+    background: black;
 }
