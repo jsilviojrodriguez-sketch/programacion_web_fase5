@@ -1,3 +1,56 @@
 body {
-    background: green !important;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f2f2f2;
+    color: #111;
+}
+
+/* HEADER */
+header {
+    background: #111;
+    padding: 10px;
+}
+
+/* BOTÓN MENÚ */
+#botonMenu {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* MENÚ */
+#menu {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    margin-top: 10px;
+}
+
+/* LINKS */
+#menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#menu a:hover {
+    background: #444;
+}
+
+/* MENSAJE */
+#mensaje {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* SLIDER */
+#slider {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
 }
