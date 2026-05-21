@@ -1,61 +1,118 @@
 body {
+
     font-family: Arial, sans-serif;
     margin: 0;
     background: #f2f2f2;
     color: #111;
+
 }
 
 /* HEADER */
+
 header {
+
     background: #111;
     padding: 15px;
+
 }
 
 /* BOTÓN */
+
 #botonMenu {
+
     background: crimson;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
+    border-radius: 5px;
+
 }
 
 /* MENÚ */
+
 #menu {
+
     display: none;
     flex-direction: column;
     background: #222;
+    margin-top: 10px;
+
 }
 
 #menu a {
+
     color: white;
     text-decoration: none;
     padding: 10px;
+
 }
 
 #menu a:hover {
+
     background: crimson;
+
 }
 
-/* TITULOS */
-h1, h2 {
+/* TÍTULOS */
+
+h1 {
+
     text-align: center;
+    color: darkred;
+    margin-top: 20px;
+
 }
 
-/* IMAGEN */
+h2 {
+
+    text-align: center;
+
+}
+
+/* MENSAJE */
+
+#mensaje {
+
+    text-align: center;
+    margin: 20px;
+
+}
+
+/* IMAGEN MÁS PEQUEÑA */
+
 #slider {
+
     display: block;
-    width: 60%;
-    max-width: 400px;
+    width: 40%;
+    max-width: 250px;
     margin: 20px auto;
     border-radius: 10px;
+    border: 3px solid darkred;
+
 }
 
 /* CONTENIDO */
+
 .contenido {
+
     width: 80%;
-    margin: auto;
+    margin: 20px auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+
+}
+
+.contenido h2 {
+
+    color: darkred;
+
+}
+
+.contenido p {
+
+    line-height: 1.6;
+
 }
