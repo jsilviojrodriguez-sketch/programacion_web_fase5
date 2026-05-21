@@ -1,7 +1,7 @@
 const boton = document.getElementById("botonMenu");
 const menu = document.getElementById("menu");
 
-// MENÚ HAMBURGUESA
+// MENÚ
 boton.addEventListener("click", function () {
 
     if (menu.style.display === "flex") {
@@ -16,7 +16,7 @@ boton.addEventListener("click", function () {
 
 });
 
-// MENSAJE DINÁMICO
+// MENSAJE
 const mensaje = document.getElementById("mensaje");
 
 if (mensaje) {
@@ -41,10 +41,10 @@ if (mensaje) {
 
 }
 
-// SLIDER SOLO SI EXISTE
-const slider = document.getElementById("slider");
+// SLIDER SOLO EN INDEX
+if (window.location.pathname.includes("index.html") || window.location.pathname.endsWith("/")) {
 
-if (slider) {
+    const slider = document.getElementById("slider");
 
     const imagenes = [
 
